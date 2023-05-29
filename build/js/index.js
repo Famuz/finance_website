@@ -1,0 +1,2 @@
+window.document.addEventListener("scroll",()=>{let e=document.querySelectorAll(".nav__link");window.scrollY>=80||window.pageYOffset>=80?(document.querySelector(".header").classList.add("inverted"),document.querySelector(".nav__logo").classList.add("nav__inverted"),e.forEach(e=>{e.classList.add("nav__inverted")})):(document.querySelector(".header").classList.remove("inverted"),document.querySelector(".nav__logo").classList.remove("nav__inverted"),e.forEach(e=>{e.classList.remove("nav__inverted")}))});
+//# sourceMappingURL=index.js.map
