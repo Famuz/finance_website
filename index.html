@@ -21,34 +21,41 @@
 <body>
   <header class="header">
     <nav class="nav container">
-    <a href="#" class="nav__logo">Financial</a>
-    <div class="nav__menu">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#home" class="nav__link active-link">
-            <i class="uil uil-estate nav__icon"></i> <span>Home</span>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">
-            <i class="uil uil-message nav__icon"></i> <span>About</span>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="#about" class="nav__link">
-            <i class="uil uil-archive"></i> <span>Services</span>
-          </a>
-        </li>
-      </ul>
-      <i class="uil uil-multiply nav__close"></i>
-    </div>
+      <a href="#" class="nav__logo">Financial</a>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__link">
+            <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> <span>Home</span>
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i> <span>About</span>
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-archive"></i> <span>Services</span>
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-multiply nav__close"></i>
+      </div>
     </nav>
   </header>
 
-  <section class="home section">
-    <div class="home__container container">
+  <section class="home ">
+    <div class="home__container">
       <div class="home__content text-center">
-        <h2>Aprenda a Manejar sus Finanzas</h2>
+        <picture>
+          <source srcset="build/img/pexels-laura-tancredi-7078504.avif" type="image/avif">
+          <source srcset="build/img/pexels-laura-tancredi-7078504.webp" type="image/webp">
+          <img src="build/img/pexels-laura-tancredi-7078504.jpg" alt="" loading="lazy" class="image__responsive">
+        </picture>
+        <div class="image__text">
+          <h2>Aprenda a Manejar sus Finanzas</h2>
+        </div>
       </div>
     </div>
   </section>
@@ -66,7 +73,7 @@
           <span>Quienes somos</span>
         </h2>
         <div class="text__description mb-8">
-          <p>En [Company Name], somos un equipo dedicado de asesores financieros comprometidos en ayudar a nuestros clientes a que alcance sus metas financieras y aseguren su futuro.
+          <p>En [Company Name], somos un equipo dedicado de asesores financieros comprometidos en ayudar a nuestros clientes a que alcancen sus metas financieras y aseguren su futuro.
           </p>
         </div>
       </div>
