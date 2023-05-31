@@ -26,17 +26,22 @@
         <ul class="nav__list">
           <li class="nav__link">
             <a href="#home" class="nav__link active-link">
-              <i class="uil uil-estate nav__icon"></i> <span>Home</span>
-            </a>
-          </li>
-          <li class="nav__link">
-            <a href="#contact" class="nav__link">
-              <i class="uil uil-message nav__icon"></i> <span>About</span>
+              <i class="uil uil-estate nav__icon"></i> Inicio
             </a>
           </li>
           <li class="nav__link">
             <a href="#about" class="nav__link">
-              <i class="uil uil-archive"></i> <span>Services</span>
+              <i class="uil uil-message nav__icon"></i> Nosotros
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#services" class="nav__link">
+              <i class="uil uil-archive"></i> Servicios
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#comments" class="nav__link">
+              <i class="uil uil-comment-alt-dots"></i> Comentarios
             </a>
           </li>
         </ul>
@@ -45,7 +50,7 @@
     </nav>
   </header>
 
-  <section class="home">
+  <section id="home" class="home section">
     <div class="home__container">
       <div class="home__content text-center">
         <picture>
@@ -54,13 +59,21 @@
           <img src="build/img/pexels-laura-tancredi-7078504.jpg" alt="" loading="lazy" class="image__responsive">
         </picture>
         <div class="image__text">
-          <h2>Aprenda a Manejar sus Finanzas</h2>
+          <h2></h2>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="image-with-text section">
+  <section class="slogan">
+    <div class="container">
+      <div class="text-center">
+        <h2>Te mostramos como tomar el control de tus Finanzas</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="image-with-text ">
     <div class="image__container bg-orange">
       <picture>
         <source srcset="build/img/pexels-bich-tran-732444.avif" type="image/avif">
@@ -80,7 +93,23 @@
     </div>
   </section>
 
-  <section class="image-with-text section">
+  <section class="slogan__button">
+    <div class="container">
+      <div class="slogan__container text-center">
+        <h2>Conoce sobre nuestros servicios</h2>
+        <div class="text__button">
+          <a
+            href="#services"
+            target="_self"
+            class="btn button button--primary">
+            Click here
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-with-text">
     <div class="image__container bg-blue">
       <div class="image__text">
         <h2 class="text__heading mb-6 lg:w-96 xl:w-97">
@@ -90,24 +119,16 @@
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
           typesetting industry.</p>
         </div>
-        <div class="text__button">
-          <a
-            href="#"
-            target="_self"
-            class="btn button button--primary">
-            Click here
-          </a>
-        </div>
       </div>
       <picture>
-        <source srcset="build/img/pexels-daniel-nettesheim-1162361.avif" type="image/avif">
-        <source srcset="build/img/pexels-daniel-nettesheim-1162361.webp" type="image/webp">
-      <img src="./build/img/pexels-daniel-nettesheim-1162361.jpg" alt="Image Company" loading="lazy" class="image__responsive">
+        <source srcset="build/img/pexels-mati-mango-10022876.avif" type="image/avif">
+        <source srcset="build/img/pexels-mati-mango-10022876.webp" type="image/webp">
+      <img src="./build/img/pexels-mati-mango-10022876.jpg" alt="Image Company" loading="lazy" class="image__responsive">
       </picture>
     </div>
   </section>
 
-  <section class="section">
+  <section id="services" class="section">
     <div class="services container">
       <div class="services__content text-center">
         <h3 class="uppercase">Nuestros servicios</h3>
@@ -140,39 +161,88 @@
     </div>
   </section>
 
-  <section class="comments section">
+  <section id="comments" class="comments">
     <div class="container">
       <div class="text-center">
-        <h2>Aprenda a Manejar sus Finanzas</h2>
+        <h2>Mira lo que nuestros clientes dicen</h2>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="text-center">
-        <h2>Aprenda a Manejar sus Finanzas</h2>
+      <form> 
+        <div class="form__info">
+          <input type="text" name="user" id="user" placeholder="Tu nombre">
+          <input type="text" name="comment" id="comment" placeholder="Agrega un comentario">
+        </div>
+        <a
+          type="submit"
+          class="btn submit__btn">
+          Agregar comentario
+        </a>
+      </form>
+      <div class="comments__container">
+        <!-- <div class="comment__card">
+          <div class="pic">a</div>
+          <div class="comment__info">
+            <small class="nickname">
+              UserNameHere
+            </small>
+            <p class="comment">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div> -->
       </div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__item-list">
-      <div class="footer__item footer--image">
-        <span>Financial</span>
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="nav__list">
+          <li>
+            <a href="#home">
+              <i class="uil uil-estate nav__icon"></i> Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#about" >
+              <i class="uil uil-message nav__icon"></i> Nosotros
+            </a>
+          </li>
+          <li>
+            <a href="#services" >
+              <i class="uil uil-archive"></i> Servicios
+            </a>
+          </li>
+          <li>
+            <a href="#comments" >
+              <i class="uil uil-comment-alt-dots"></i> Comentarios
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="#">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer__item footer--email">
-        <span>Financial</span>
-      </div>
-      <div class="footer__item footer--social">
-        <span>Financial</span>
-      </div>
-    </div>
     </div>
   </footer>
 
 
-  <script src="./build/js/index.js"></script>
+  <script type="module" src="./build/js/index.js"></script>
 </body>
 </html>
